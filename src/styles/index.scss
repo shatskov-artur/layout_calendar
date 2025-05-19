@@ -43,7 +43,7 @@ body {
   }
 }
 
-@for $i from 1 to 32 {
+@for $i from 1 to 42 {
   .calendar__day:nth-child(#{$i})::before {
     content: '#{$i}';
   }
@@ -57,7 +57,7 @@ body {
   }
 }
 
-@for $i from 28 to 32 {
+@for $i from 28 to 42 {
   .calendar--month-length-#{$i} :nth-child(n + #{$i + 1}) {
     display: none;
   }
